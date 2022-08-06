@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula de bootstrap 01</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark d-none">
+      <div class="container">
+        <a href="#" class="navbar-brand">AulBot</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavegacao"
+          aria-controls="menuNavegacao"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menuNavegacao" class="collapse navbar-collapse">
+          <ul class="navbar-nav w-100 d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contato</a>
+            </li>
+            <li class="nav-item dropdown d-none">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="menuUsuario"
+                data-bs-toggle="dropdown"
+                >Olá, Francis</a
+              >
+              <div class="dropdown-menu" aria-labelledby="menuUsuario">
+                <a href="#" class="dropdown-item">Meu perfil</a>
+                <a href="#" class="dropdown-item">Sair</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container vh-100">
+        <div class="row h-100 d-flex align-items-center justify-content-center">
+          <div class="col-xs-10 col-sm-8 col-md-5">
+            <div class="card shadow-sm rounded">
+              <div class="card-header">Acesso ao sistema</div>
+              <div class="card-body">
+                <div class="alert alert-success d-none">
+                  Logado com sucesso, redirecionando
+                </div>
+                <form id="frmLogin">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="nome@email.com"
+                      required
+                    />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="password"
+                      placeholder="****"
+                      required
+                    />
+                    <label for="password">Senha</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-5">
+                      <button type="submit" class="btn btn-primary w-100">
+                        Entrar
+                      </button>
+                    </div>
+                    <div class="col-5 offset-2">
+                      <button type="reset" class="btn btn-secondary w-100">
+                        Resetar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
